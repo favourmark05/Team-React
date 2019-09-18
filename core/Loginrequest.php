@@ -4,7 +4,7 @@ class Login extends core
     public function LoginValues($email, $password)
     {
         $secure = password_hash($password, PASSWORD_DEFAULT);
-        $login = $this->query("SELECT * FROM users WHERE email='$email'");
+        $login = $this->query("SELECT * FROM user WHERE email='$email'");
 
         $user_data = mysqli_fetch_array($login);
         $userpass = $user_data['password'];
