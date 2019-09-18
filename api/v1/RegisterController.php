@@ -1,6 +1,9 @@
 <?php
 require_once "../core/init.php";
 if (isset($_REQUEST['Register']) || isset($_POST['Register'])) {
+    if($_POST['password'] != $_POST['repeat_password']){
+        echo "<script>alert('Password do not match')</script>";
+    }
 
     $RegistrationRequests = $Registration->RegisterValues($_POST['firstname'], $_POST['lastname'], $_POST['email'], $_POST['password']);
 
