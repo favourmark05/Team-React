@@ -94,14 +94,14 @@ require_once 'core/init.php';
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form>
+                    <form method="post">
                     <div class="form-group">
                             <label for="exampleInputEmail1">First name</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="firstname">
+                            <input type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="firstname">
                         </div>
                         <div class="form-group">
                             <label for="exampleInputEmail1">Last name</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="lastname">
+                            <input type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="lastname">
                         </div>
                         <div class="form-group">
                             <label for="exampleInputEmail1">Email address</label>
