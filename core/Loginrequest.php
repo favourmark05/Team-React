@@ -7,7 +7,7 @@ class Login extends core
         $login = $this->query("SELECT * FROM user WHERE email='$email'");
 
         $user_data = mysqli_fetch_array($login);
-        $userpass = $user_data['password'];
+        $userpass = $user_data['passwordHash'];
         var_dump($user_data['password']);
 
         $count_row = $login->num_rows;
