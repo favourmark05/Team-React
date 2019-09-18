@@ -4,7 +4,7 @@ class Register extends core
     public function RegisterValues($firstname, $lastname, $email, $password)
     {
         $passwords = password_hash($password, PASSWORD_DEFAULT);
-        $check_email = "SELECT * FROM users WHERE email='$email'";
+        $check_email = "SELECT * FROM user WHERE email='$email'";
         $sql_data = "INSERT INTO user (firstname, lastname, email, password)
         VALUES ('$firstname', $lastname', '$email', '$passwords')";
         $check = $this->query($check_email);
