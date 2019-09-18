@@ -1,0 +1,132 @@
+body{
+    width: 100%;
+    background-image: linear-gradient(rgba(15, 15, 15, 0.8),rgba(15, 15, 15, 0.8)),url("../images/CastleLiteUnlocks_NastyC02-1024x682.jpg");
+    background-size:100%;
+    background-position:center;
+    color:white;
+}
+/* @media screen and (max-width:700px){
+    body{
+        background-image: linear-gradient(rgba(15, 15, 15, 0.8),rgba(15, 15, 15, 0.8)),url("../images/CastleLiteUnlocks_NastyC02-1024x682.jpg");
+        background-repeat: no-repeat;
+        background-size:250%;
+    }
+    div#form{
+        text-align:center;
+        width: 80%;
+        background: linear-gradient(rgba(15, 15, 15, 0.8),rgba(15, 15, 15, 0.8));
+        margin: 40% 10%;
+        border-radius: 10px;
+        color:white;
+    }
+} */
+
+@media screen and (max-width:700px){
+    body{
+        background-image: linear-gradient(rgba(15, 15, 15, 0.8),rgba(15, 15, 15, 0.8)),url("../images/CastleLiteUnlocks_NastyC02-1024x682.jpg");
+        background-repeat: no-repeat;
+        background-size:250%;
+    }
+    div#form{
+        text-align:center;
+        width: 80%;
+        background: linear-gradient(rgba(15, 15, 15, 0.8),rgba(15, 15, 15, 0.8));
+        margin: 40% 10%;
+        border-radius: 10px;
+        color:white;
+    }
+}
+@media screen and (width:1024px){
+    body{
+        width:100%;
+        background-image: linear-gradient(rgba(15, 15, 15, 0.8),rgba(15, 15, 15, 0.8)),url("../images/CastleLiteUnlocks_NastyC02-1024x682.jpg");
+        background-repeat: no-repeat;
+        /* background-size:200%; */
+        background-size:cover;
+    }
+    div#form{
+        text-align:center;
+        width: 100%;
+        background: linear-gradient(rgba(15, 15, 15, 0.8),rgba(15, 15, 15, 0.8));
+        margin:18% 50%;
+        border-radius: 10px;
+        color:white;
+    }
+}
+@media screen and (width:768px){
+    body{
+        width:100%;
+        background-image: linear-gradient(rgba(15, 15, 15, 0.8),rgba(15, 15, 15, 0.8)),url("../images/CastleLiteUnlocks_NastyC02-1024x682.jpg");
+        background-repeat: no-repeat;
+        /* background-size:200%; */
+        background-size:cover;
+    }
+    div#form{
+        text-align:center;
+        width: 100%;
+        background: linear-gradient(rgba(15, 15, 15, 0.8),rgba(15, 15, 15, 0.8));
+        margin:15% 50%;
+        border-radius: 10px;
+        color:white;
+    }
+}
+#form{
+    text-align:center;
+    width: 50%;
+    background: linear-gradient(rgba(15, 15, 15, 0.8),rgba(15, 15, 15, 0.8));
+    margin: 4% 25%;
+    border-radius: 10px;
+    color:white;
+}
+#data{
+    padding: 3%;
+}
+#imagePreview {
+    width: 40%;
+    height: 200px;
+    background-position: center center;
+    background-size: cover;
+    background-color:white;
+    border-radius:10px;
+    margin-left:30%;
+}
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+.inputfile + label {
+    font-size: 1.25em;
+    font-weight: 700;
+    color: white;
+    background-color: black;
+    border-radius:50%;
+    height:auto;
+    width:10%;
+    text-align: center;
+    border: 1px solid #ccc;
+
+}
+.inputfile:focus + label,
+.inputfile + label:hover {
+    background-color: white;
+    color: black;
+}
+
+.inputfile + label {
+    cursor: pointer; /* "hand" cursor */
+}
+input, select{
+    border-radius: 3px;
+    height: 40px;
+}
+#container{
+    color:white;
+}
+input[type="submit"]{
+    background-color:blue;
+    color:white;
+}
