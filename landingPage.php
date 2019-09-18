@@ -1,6 +1,6 @@
 <?php
-require "../core/init.php";
-echo $_SESSION['uid'];
+require "core/init.php";
+echo $_SESSION['_id'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
