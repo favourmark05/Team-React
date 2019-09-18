@@ -8,7 +8,7 @@ if (isset($_REQUEST['Register']) || isset($_POST['Register'])) {
         $Login = new Login();
         $LoginRequest = $Login->LoginValues($_POST['email'], $_POST['password']);
         if ($LoginRequest) {
-            header("location: http://otugeme.test/views/home.php");
+            header("location: landingPage.php");
         }
     } else {
         echo "<script>alert('Error Email already exists please try again')</script>";

@@ -1,22 +1,6 @@
 <?php
-
-session_start();
-
-include_once 'class.user.php';
-
-$user = new User();
-$uid = $_SESSION['uid'];
-
-if (!$user->get_session()) {
-  header('location:login.php');
-}
-
-if (isset($_GET['q'])) {
-  $user->user_logout();
-
-  header('location:login.php');
-}
-
+require "../core/init.php";
+echo $_SESSION['uid'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -57,7 +41,7 @@ if (isset($_GET['q'])) {
                 <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
               </li>
               <li class="nav-item">
-                <a href="home.php?q=logout">LOGOUT</a>
+                <a href="landingPage.php?q=logout" class="btn btn-sm btn-outline-secondary">LOGOUT</a>
               </li>
             </ul>
           </div>
