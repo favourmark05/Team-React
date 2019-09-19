@@ -56,7 +56,7 @@ require_once 'core/init.php';
                         </button>
                     </div>
                     <div class="modal-body">
-                        <form>
+                        <form method="post">
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Email address</label>
                                 <input type="email" class="form-control bottom" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="email" required>

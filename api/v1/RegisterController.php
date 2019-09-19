@@ -12,7 +12,7 @@ echo $_POST['email'];
         $Login = new Login();
         $LoginRequest = $Login->LoginValues($_POST['email'], $_POST['password']);
         if ($LoginRequest) {
-            header("location: landingPage.php");
+            header("location: landingpage.php");
         }
     } else {
         echo "<script>alert('Error Email already exists please try again')</script>";

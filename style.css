@@ -10,7 +10,8 @@
 .head{
     font: bolder !important;
     font-size: 40px !important;
-    font-family: 'Pacifico', cursive;
+    /* font-family: 'Pacifico', cursive; */
+    color: white !important;
 }
 .toph1{
     margin-top: 200px !important;
