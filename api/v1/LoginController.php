@@ -8,6 +8,6 @@ if (isset($_REQUEST['login']) || isset($_POST['login'])) {
         header("location: landingpage.php");
         echo "welcome";
     } else {
-        echo "<script>alert('Error')</script>";
+        echo "<script>alert('Invalid username or password')</script>";
     }
 }

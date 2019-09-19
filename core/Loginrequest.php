@@ -8,7 +8,6 @@ class Login extends core
 
         $user_data = mysqli_fetch_array($login);
         $userpass = $user_data['password'];
-        var_dump($user_data['password']);
 
         $count_row = $login->num_rows;
 
