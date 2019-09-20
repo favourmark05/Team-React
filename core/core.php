@@ -9,7 +9,8 @@ class core
 
     public function __construct()
     {
-        $this->db = new mysqli('localhost', 'root', '', 'hng');
+        $this->db = new PDO("mysql:host='localhost';dbname='hng'", 'root', '');
+        $this->db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         if ($this->db->connect_error) {
             die("Connection failed: " . $this->db->connect_error);
         }
@@ -17,7 +18,14 @@ class core
     public function query($sql)
     {
         // $this->result = $this->db->query($sql);
-        $this->result = mysqli_query($this->db, $sql);
+        // $this->result = mysqli_query($this->db, $sql);
+        $this->result = $this->db->prepare($sql);
+        $this->result->execute();
+        $result = $$this->result->setFetchMode(PDO::FETCH_ASSOC);
+        var_dump($result);
+
+        // $stmt = $conn->prepare("SELECT id, firstname, lastname FROM MyGuests");
+        // $stmt->execute();
         if ($this->result) {
             return $this->result;
         } else {
