@@ -9,10 +9,12 @@ class Register extends core
         VALUES ('$firstname', '$lastname', '$email', '$passwords')";
         $check = $this->query($check_email);
         // checking if the  email is available in db   
-        $count_row = $check->num_rows;
+        $count_row = $check->fetch();
+        var_dump($count_row);
         // if the email is not in db then insert to the table
-        if ($count_row == 0) {
+        if ($count_row == false) {
             $regis = $this->query($sql_data);
+            var_dump($regis);
             if ($regis) {
                 return TRUE;
             }

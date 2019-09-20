@@ -1,6 +1,8 @@
 <?php
 require "core/init.php";
-echo $_SESSION['_id'];
+if (!$_SESSION['_id']) {
+  header("location:index.php");
+};
 ?>
 <!DOCTYPE html>
 <html lang="en">

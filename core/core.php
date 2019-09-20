@@ -1,7 +1,6 @@
 <?php
 class core
 {
-    // protected $result;
     public $result;
     private $rows;
     public $db;
@@ -9,23 +8,23 @@ class core
 
     public function __construct()
     {
-        $this->db = new PDO("mysql:host='localhost';dbname='hng'", 'root', '');
-        $this->db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        if ($this->db->connect_error) {
-            die("Connection failed: " . $this->db->connect_error);
+        try {
+            $hng = 'hng';
+            $servername = "localhost";
+            $this->db = new PDO("mysql:host=$servername;dbname=$hng", 'root', '');
+            // set the PDO error mode to exception
+            $this->db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        } catch (PDOException $e) {
+            echo "Connection failed: " . $e->getMessage();
         }
     }
     public function query($sql)
     {
-        // $this->result = $this->db->query($sql);
-        // $this->result = mysqli_query($this->db, $sql);
+
         $this->result = $this->db->prepare($sql);
         $this->result->execute();
-        $result = $$this->result->setFetchMode(PDO::FETCH_ASSOC);
-        var_dump($result);
+        $result = $this->result->setFetchMode(PDO::FETCH_ASSOC);
 
-        // $stmt = $conn->prepare("SELECT id, firstname, lastname FROM MyGuests");
-        // $stmt->execute();
         if ($this->result) {
             return $this->result;
         } else {
