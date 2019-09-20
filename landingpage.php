@@ -23,27 +23,21 @@ if (!$_SESSION['_id']) {
   <section class="content">
     <div class="topImg">
       <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-danger">
-          <a class="navbar-brand text-primary head" href="#">TEAM-REACT</a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top">
+          <a class="navbar-brand text-white head" href="#">TEAM-REACT</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <!-- <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> -->
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
+                <!-- <a class="nav-link" href="#">About Us</a> -->
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-              </li>
-              <li class="nav-item">
-                <a href="landingPage.php?q=logout" class="btn btn-sm btn-outline-secondary">LOGOUT</a>
+                <a href="landingpage.php?q=logout" class="btn btn-danger">LOGOUT</a>
               </li>
             </ul>
           </div>
@@ -63,8 +57,8 @@ if (!$_SESSION['_id']) {
         <div class="card shadow">
           <img src="images/laptop-3265726_1920.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <h5 class="card-title">TECH</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, modi.</p>
             <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
           </div>
         </div>
@@ -72,8 +66,8 @@ if (!$_SESSION['_id']) {
         <div class="card shadow">
           <img src="images/chart-2785979_1920.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            <h5 class="card-title">TRAINED ANALIST</h5>
+            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas, mollitia.</p>
             <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
           </div>
         </div>
@@ -81,8 +75,8 @@ if (!$_SESSION['_id']) {
         <div class="card shadow">
           <img src="images/office-3309862_1920.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            <h5 class="card-title">CONTENT DEVELOPERS</h5>
+            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, impedit!</p>
             <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
           </div>
         </div>

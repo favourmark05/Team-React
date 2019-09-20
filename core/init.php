@@ -9,3 +9,4 @@ require 'api/v1/RegisterController.php';
 require 'checkemail.php';
 require 'logoutrequest.php';
 require 'api/v1/LogoutController.php';
+require 'functions.php';
