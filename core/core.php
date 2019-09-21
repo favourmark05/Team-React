@@ -9,7 +9,7 @@ class core
     public function __construct()
     {
         try {
-            $hng = 'hng';
+            $hng = 'b15_24511948_hng';
             $servername = "sql113.byethost15.com";
             $this->db = new PDO("mysql:host=$servername;dbname=$hng", 'b15_24511948', 'danielmabs');
             // set the PDO error mode to exception
