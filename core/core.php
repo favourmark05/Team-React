@@ -10,8 +10,8 @@ class core
     {
         try {
             $hng = 'hng';
-            $servername = "localhost";
-            $this->db = new PDO("mysql:host=$servername;dbname=$hng", 'root', '');
+            $servername = "sql113.byethost15.com";
+            $this->db = new PDO("mysql:host=$servername;dbname=$hng", 'b15_24511948', 'danielmabs');
             // set the PDO error mode to exception
             $this->db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         } catch (PDOException $e) {
